@@ -1,0 +1,8 @@
+duckdb:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ./data/analytics.duckdb
+      extensions:
+        - parquet
