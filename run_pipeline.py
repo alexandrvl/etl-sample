@@ -46,7 +46,7 @@ def extract_postgres_to_parquet():
                 SELECT * FROM postgres_scan(
                     '{postgres_conn}', 
                     'public',
-                    'SELECT * FROM {table}'
+                    '{table}'
                 )
             ) TO '{parquet_file}' (FORMAT PARQUET)
         """)
